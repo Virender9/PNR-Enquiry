@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        text-align: center;
+      }
+      div {
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 200px;
+        margin: 50px auto;
+      }
+      input {
+        margin: 20px 0;
+      }
+      table {
+        margin: auto;
+        border: 1px solid lightgray;
+      }
+      th {
+        border-right: 1px solid gray;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" class="pnr_num" alt="pnr_number" />
+      <button type="button" class="btn">Get Details</button>
+    </div>
+    <table>
+      <tr>
+        <th>Train No</th>
+        <th>Train Time</th>
+        <th>PNR Number</th>
+        <th>Booking Date No</th>
+        <th>Source and Destination</th>
+        <th>Journey Class</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td id="num"></td>
+        <td id="time"></td>
+        <td id="pnr"></td>
+        <td id="booking"></td>
+        <td id="sd"></td>
+        <td id="classType"></td>
+        <td id="status"></td>
+      </tr>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
